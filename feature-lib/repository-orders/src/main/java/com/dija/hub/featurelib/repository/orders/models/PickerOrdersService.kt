@@ -28,16 +28,6 @@ interface PickerOrdersService {
 
 object MockPickerOrdersService : PickerOrdersService {
 
-	init {
-		GlobalScope.launch {
-			delay(2000)
-
-			mockList.add(
-				generateMockOrder()
-			)
-		}
-	}
-
 	private fun generateMockOrder() :OrderNetwork {
 
 		val random = Random(87)
@@ -92,20 +82,12 @@ object MockPickerOrdersService : PickerOrdersService {
 				),
 				OrderItemNetwork(
 					2,
-					"Citrus & Vine Chenin Blanc 2020",
+					"Orange Juice 2020",
 					1,
 					"5051559107004",
 					listOf("P-04-05"),
 					""
 				),
-				OrderItemNetwork(
-					2,
-					"MCVITIES Digestives Original 400g",
-					4,
-					"5000168001159",
-					listOf("P-04-05"),
-					""
-				)
 			)
 		)
 	)
