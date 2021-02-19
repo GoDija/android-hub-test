@@ -1,0 +1,13 @@
+rootProject.name = "Hub"
+
+include ':app'
+
+include ':feature:orderpickup'
+include ':feature:home'
+
+include ':feature-lib:base'
+include ':feature-lib:repository-orders'
+include ':feature-lib:repository-hub'
+
+include ':lib:network'
+include ':lib:base'

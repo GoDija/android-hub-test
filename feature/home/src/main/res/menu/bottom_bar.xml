@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_orders"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:title="Orders"/>
+    <item
+        android:id="@+id/page_settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings"/>
+</menu>
