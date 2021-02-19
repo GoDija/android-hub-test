@@ -59,7 +59,6 @@ class OrderListRepository @Inject constructor(
 
 			orderFlow.emit(
 				list.sortedByDescending { it.createdAt }
-					.filter { order -> order.status.isNotMoreThan(OrderStatus.PACKED) }
 			)
 
 			list.forEach { ordersCache[it.id] = it }
