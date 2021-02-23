@@ -1,4 +1,4 @@
-rootProject.name = "Hub"
+rootProject.name = "Hub-Test"
 
 include ':app'
 

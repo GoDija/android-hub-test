@@ -38,7 +38,7 @@ object MockPickerOrdersService : PickerOrdersService {
 
 		return OrderNetwork(
 			orderId,
-			orderDisplayId = "$orderId-${random.nextInt(from = 0, until = 9)}",
+			"$orderId-${random.nextInt(from = 0, until = 9)}",
 			"Will",
 			"2020-01-15T10:31:11Z",
 			5,
@@ -64,7 +64,7 @@ object MockPickerOrdersService : PickerOrdersService {
 	private val mockList = mutableListOf(
 		OrderNetwork(
 			456,
-			orderDisplayId = "456-2",
+			"456-2",
 			"Boby",
 			"2020-01-15T10:31:11Z",
 			6,
